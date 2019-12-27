@@ -1,24 +1,19 @@
-import React from 'react';
+import React from "react";
+import BookContextProvider from "./Context/BookContext";
+import NavBar from "./Components/NavBar";
+import BookList from "./Components/BookList";
+import BookForm from "./Components/BookForm";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <BookContextProvider>
+              <NavBar/>
+              <BookList/>
+              <BookForm />
+            </BookContextProvider>
+        </div>
+    );
 }
 
 export default App;
