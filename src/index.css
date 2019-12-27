@@ -5,7 +5,7 @@ body {
         "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: #553055;
+    background: #ddd;
 }
 
 .App {
@@ -15,6 +15,7 @@ body {
     max-width: 700px;
     color: #eee;
     padding: 1px;
+    box-shadow: 4px 4px 15px #221c1fb5;
 }
 
 .navbar {
@@ -63,4 +64,32 @@ body {
 .empty {
     margin: 20px;
     text-align: center;
+}
+
+form {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+input[type='text'] {
+  width: 49%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 6px 0;
+  background: #3c1f3c;
+  color: #fff;
+  border: 1px solid #fff9;
+  border-radius: 5px;
+}
+
+input[type='submit'] {
+   margin: 10px 0 10px auto;
+   background: #eee;
+   border: 0;
+   padding: 6px 20px;
+   display: block;
+   width: 30%;
+   border-radius: 5px;
 }
